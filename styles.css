@@ -43,21 +43,43 @@ body {
     font-weight: 500;
     font-size: 16px;
 
-    background-color: #9356dc;
-    background-color: linear-gradient(to top, var(--main-color), var(--second-color));
+    background-color: linear-gradient(var(--main-color), var(--second-color));
     box-shadow: 0px 5px 10px #353535;
 }
 
-.Column {
+.logocolor {
+    font-family: "Shrikhand";
+    color: white;
+    padding: 22px 0px 12.5px;
+}
+
+.column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.logosize {
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.center {
+    align-items: center;
+}
+
+.fontlogosize {
     width: 11px;
     height: 13px;
     font-size: 11px;
+}
+
+.imgsize {
+    object-fit: cover;
+    width: 340px;
+    height: 231px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .marginleft {
@@ -66,10 +88,4 @@ body {
 
 .paddingright {
     padding-right: 11px;
-}
-
-.logocolor {
-    font-family: "Shrikhand";
-    color: white;
-    padding: 22px 0px 12.5px;
 }
