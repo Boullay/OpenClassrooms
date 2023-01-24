@@ -16,51 +16,63 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/logo/ohmyfood.png" alt="logo_tete">
-        <div>
-            <form method="get" action="">
-                <input type="text" name="ville" id="ville" placeholder="Paris, Belleville" maxlength="30">
+    <header class="column center">
+        <div class="logoblock column center">
+            <img src="images/logo/ohmyfood.png" alt="logo_tete" class="logoheader">
+        </div>
+        <div class="barreblock column center">
+            <form method="get">
+                <i class="fa-solid fa-location-dot fontdot"></i>
+                <input type="text" name="ville" id="ville" placeholder="Paris, Belleville" maxlength="30"
+                    class="barresrc">
             </form>
         </div>
 
     </header>
     <main>
-        <section class="column center">
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <section class="column center colorLG">
+            <article class="text">
+                <h2>Réservez le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            </article>
             <a href="#" class="btn btncolor btnrounded">Explorer nos restaurants</a>
         </section>
-        <section class="">
-            <h2>Fonctionnement</h2>
-            <ul>
-                <li><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
-                <li><i class="fa-solid fa-list-ul">Composez votre menu</i></li>
-                <li><i class="fa-solid fa-store">Dégustez au restaurant</i></li>
+        <section class="margin">
+            <h2 class="marginleft">Fonctionnement</h2>
+            <ul class="column list">
+                <li class="block lightgrey"><span class="circle btnrounded">1</span><i
+                        class="fa-solid fa-mobile-screen-button fontblock Greycolor"></i>Choisissez un restaurant</li>
+                <li class="block lightgrey"><span class="circle btnrounded">2</span><i
+                        class="fa-solid fa-list-ul fontblock Greycolor"></i>Composez votre menu</li>
+                <li class="block pink"><span class="circle btnrounded">3</span><i class="fa-solid fa-store fontblock Maincolor"></i>Dégustez au restaurant</li>
             </ul>
         </section>
-        <section>
+        <section class="colorLG">
             <h2>Restaurants</h2>
             <div class="column center">
-                <a href="#" class="">
-                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="palette" class="imgsize"><div class="row">
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
-                        <i class="fa-thin fa-heart"></i>
+                <div class="column">
+                    <span class="new column center">Nouveau</span>
+                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="palette" class="imgsize">
+                    <div class="row center ContentRestoCard">
+                        <a href="#" class="label">
+                            <h3 class="spacetext">La palette du goût</h3>
+                            <p class="spacetext">Ménilmontant</p>
+                        </a>
+                        <i class="fa-regular fa-heart fontheart"></i><i class="fa-solid fa-heart fontheartfull"></i>
                     </div>
-                </a>
+                </div>
 
             </div>
         </section>
 
     </main>
-    <footer class="footercolor">
 
+    <footer class="footercolor">
         <div class="column marginleft">
             <span class="logocolor">ohmyfood</span>
-            <a href="#" class="btn"><i class="fa-solid fa-utensils fontlogosize paddingright"></i>Proposez un
+            <a href="#" class="btn"><i class="fa-solid fa-utensils fontlogosize fontspace"></i>Proposez un
                 restaurant</a>
-            <a href="#" class="btn"><i class="fa-solid fa-handshake-angle fontlogosize paddingright"></i>Devenir
+            <a href="#" class="btn"><i class="fa-solid fa-handshake-angle fontlogosize fontspace"></i>Devenir
                 partenaire</a>
             <a href="#" class="btn">Mention légales</a>
             <a href="#" class="btn">Contact</a>
