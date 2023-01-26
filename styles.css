@@ -210,7 +210,7 @@ body {
 
 }
 
-.btncheck:hover {
+.block:active {
     transform: scale(1);
 }
 
@@ -220,9 +220,10 @@ body {
 }
 
 .bordermenu {
-    border-bottom: 2px solid var(--tertiaire-color);
-    padding: 5px;
-    margin: 0px 3%;
+    border-bottom: 3px solid var(--tertiaire-color);
+    padding: 5px 0%;
+    margin: 0px 4%;
+    width: 40px;
 }
 
 strong {
@@ -230,7 +231,7 @@ strong {
     font-size: 18px;
 }
 
-p {
+.textmenu {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -301,20 +302,26 @@ p {
     padding-right: 11px;
 }
 
-.fontheart {
-    opacity: 1;
-    transition: all 450ms;
-}
-.fontheart:hover {
-    opacity: 0;
-}
+/*Anim HEART*/
 
-.fontheartfull {
+.FHpositionmenu {
+    position: absolute;
+    left: 312px;
+}
+.FHposition {
+    position: absolute;
+    left: 289px;
+}
+.fontheart {
+    font-size: 20px;
+}
+.full {
     transition: all 450ms;
     opacity: 0;
+    background: linear-gradient( var(--main-color), var(--second-color));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.fontheartfull:hover {
-    display: block;
+.full:hover {
     opacity: 1;
-    color: #9356dc;
 }
