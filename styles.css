@@ -1,4 +1,7 @@
 /*GENERAL*/
+html {
+    overflow-x: hidden;
+}
 :root {
     --main-color: #9356dc; /* var(--main-color) */
     --second-color: #ff79da; /* var(--second-color) */
@@ -93,7 +96,7 @@ body {
     font-size: 14px;
     padding: 0.8% 2% 0.5%;
     position: absolute;
-    left: 24px;
+    left: -10px;
 }
 
 .fontblock {
@@ -166,8 +169,12 @@ body {
     color: #008766;
     width: 80px;
     position: absolute;
-    left: 243px;
-    top: calc(51.6%);
+    right: 5%;
+    top: 5%;
+}
+
+.restoitem {
+    position: relative;
 }
 
 .logocolor {
@@ -207,7 +214,7 @@ body {
     transform: scaleX(0);
     transform-origin: 100% 0%;
     transition: transform 450ms;
-
+    display: none;
 }
 
 .block:active {
@@ -279,14 +286,23 @@ strong {
 .imgsize {
     object-fit: cover;
     width: 335px;
-    height: 176px;
+    height: 100%;
     border-radius: 15px 15px 0px 0px;
     cursor: pointer;
+}
+
+.Cardsize {
+    height: 176px;
 }
 
 .imgbacksize {
     width: 100%;
     object-fit: cover;
+}
+.backgroundmenu {
+    position: absolute;
+    top: 272px;
+    width: 100%;
 }
 
 .marginleft {
@@ -324,4 +340,10 @@ strong {
 }
 .full:hover {
     opacity: 1;
+}
+
+li:hover button {
+    display: block;
+    transform: scale(1);
+
 }
