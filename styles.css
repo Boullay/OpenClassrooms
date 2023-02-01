@@ -16,13 +16,15 @@ body {
     color: black;
 
     margin: auto;
+    overflow-x: hidden;
+    max-width: 1440px;
 }
 
 /*HEADER*/
 
 .logoheader {
     width: 162px;
-    padding: 20px 0px 5px 0px;
+    padding: 20px 20px 5px 0px;
 }
 
 .logoblock {
@@ -52,7 +54,10 @@ body {
     font-weight: 500;
     font-size: 16px;
     font-family: "Roboto";
+}
 
+.arrowsize {
+    font-size: 20px;
 }
 
 /*SECTON TEXT*/
@@ -148,7 +153,7 @@ body {
 .btncolor {
     border: 0px solid;
     width: 218px;
-    padding: 13px 18.75px;
+    padding: 15px 18.75px;
 
     display: flex;
     flex-direction: column;
@@ -159,6 +164,23 @@ body {
 
     background: linear-gradient(345deg, var(--main-color), var(--second-color));
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btncolor::after {
+    content: "Explorer nos restaurants";
+    position: absolute;
+    top : 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: light(linear-gradient(345deg, var(--main-color), var(--second-color)));
+    opacity: 0;
+    z-index: -1;
+    transition: ease-in-out 250ms;
+}
+.btncolor:hover::after {
+    opacity: 1;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.15);
 }
 
 .new {
@@ -175,6 +197,9 @@ body {
 
 .restoitem {
     position: relative;
+}
+.Cardspace {
+    margin: 18px 0px;
 }
 
 .logocolor {
@@ -208,17 +233,18 @@ body {
     border: none;
     background-color: var(--tertiaire-color);
     border-radius: 0px 20px 20px 0px;
-    padding: 27px;
+    padding: 27px 0px;
     position: relative;
     left: 12px;
-    transform: scaleX(0);
-    transform-origin: 100% 0%;
-    transition: transform 450ms;
-    display: none;
+    transition: ease-in-out 500ms;
+    opacity: 0;
+    width: 0px;
+    height: 100%;
 }
-
-.block:active {
-    transform: scale(1);
+.end:hover .btncheck {
+    opacity: 1;
+    width: 6em;
+    padding: 27px;
 }
 
 .titreresto {
@@ -242,6 +268,7 @@ strong {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    width: 100%;
 }
 
 .espaceprix {
@@ -299,9 +326,13 @@ strong {
     width: 100%;
     object-fit: cover;
 }
+.divbacksize {
+    height: 218px;
+}
+
 .backgroundmenu {
-    position: absolute;
-    top: 272px;
+    position: relative;
+    z-index: 1;
     width: 100%;
 }
 
@@ -346,4 +377,83 @@ li:hover button {
     display: block;
     transform: scale(1);
 
+}
+
+ul {
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+    animation-delay: 500ms;
+}
+
+@media screen and (min-width: 800px) {
+    .desktopsize {
+        font-size: 40px;
+    }
+    .desktoprow {
+        flex-direction: row;
+    }
+    .desktopreverse {
+        flex-direction: row-reverse;
+        justify-content: end;
+        align-items: baseline;
+        margin-right: 5%;
+        padding-top: 26px;
+    }
+    .footermarg {
+        margin-right: 3%;
+    }
+    .footersize {
+        width: 100%;
+        max-width: 650px;
+    }
+    .footercolor {
+        padding-bottom: 26px;
+    }
+    .desktopcenter {
+        align-items: center;
+    }
+    .desktopblockcenter {
+        justify-content: center;
+    }
+    .block {
+        margin: 12px 36px;
+    }
+    .espacetitre {
+        margin-left: 16%;
+    }
+    .text {
+        padding: 0%;
+    }
+    .colorLG {
+        padding-bottom: 42px;
+    }
+    .btn {
+        margin-top: 1%;
+    }
+    .imgbacksize {
+        width: 1440px;
+        height: 433px;
+    }
+    .backgroundmenu {
+        max-width: 1055px;
+    }
+    .columncenter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .espacelist {
+        padding: 0% 14%;
+    }
+    .bordermenu {
+        margin: 0% 17.5%;
+    }
+    .divbacksize {
+        height: 376px;
+    }
+    .FHpositionmenu {
+        left: 700px;
+        top: 44px;
+    }
+    
 }
