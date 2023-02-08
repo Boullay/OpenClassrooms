@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="https://kit.fontawesome.com/f0bfd040fc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +17,10 @@
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
     <header class="row center">
         <a href="index.html" class="label marginleft"><i class="fa-sharp fa-solid fa-arrow-left arrowsize"></i></a>
         <div class="logoblock column center">
@@ -34,7 +38,7 @@
                 <i class="fa-regular fa-heart fontheart test FHpositionmenu"></i><i class="fa-solid fa-heart fontheart full FHpositionmenu"></i>
             </div>
             <span class="bordermenu">ENTRÉES</span>
-            <ul class="column espacelist">
+            <ul class="column espacelist animate-left animate-time-entre">
                 <li class="block row end">
                     <p class="textmenu"><strong>Tartare de poulpe acidulé</strong><br>
                         Aux zestes d'orange</p>
@@ -61,7 +65,7 @@
                 </li>
             </ul>
             <span class="bordermenu">PLATS</span>
-            <ul class="column espacelist">
+            <ul class="column espacelist animate-left animate-time-plat">
                 <li class="block row end">
                     <p class="textmenu"><strong>Coquilles Saint-Jacques</strong><br>
                         Accompagnées d'une purée de panais</p>
@@ -88,7 +92,7 @@
                 </li>
             </ul>
             <span class="bordermenu">DESSERTS</span>
-            <ul class="column espacelist">
+            <ul class="column espacelist animate-left animate-time-dessert">
                 <li class="block row end">
                     <p class="textmenu"><strong>Pétales de violettes glacés</strong><br>
                         Revisité</p>
@@ -129,7 +133,7 @@
                 <a href="#" class="btn footermarg"><i class="fa-solid fa-handshake-angle fontlogosize fontspace"></i>Devenir
                     partenaire</a>
                 <a href="#" class="btn footermarg">Mention légales</a>
-                <a href="#" class="btn footermarg">Contact</a>
+                <a href="mailto:louisoncolin@hotmail.fr" class="btn footermarg">Contact</a>
             </div>
         </div>
     </footer>
