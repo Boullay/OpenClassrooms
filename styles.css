@@ -18,7 +18,7 @@ body {
     margin: auto;
     overflow-x: hidden;
     max-width: 1440px;
-    animation: loadersize 2s linear;
+    animation: loadersize 1.5s linear;
 }
 @keyframes loadersize {
     0% {max-width: none;}
@@ -104,9 +104,10 @@ body {
     background: var(--main-color);
     font-weight: 500;
     font-size: 14px;
-    padding: 0.8% 2% 0.5%;
+    padding: 4px 8px;
     position: absolute;
     left: -10px;
+    top: 25px;
 }
 
 .fontblock {
@@ -298,6 +299,8 @@ strong {
 
 /**/
 
+/*DISPLAY*/
+
 .column {
     display: flex;
     flex-direction: column;
@@ -320,6 +323,8 @@ strong {
     width: 90%;
     max-width: 634px;
 }
+
+/*********************/
 
 .fontlogosize {
     width: 11px;
@@ -401,7 +406,7 @@ strong {
     width: 100%;
     z-index: 2;
     background-color: #353535;
-    animation: loader-wrapper 2s linear;
+    animation: loader-wrapper 1.5s linear;
     visibility: hidden;
 }
 @keyframes loader-wrapper{
@@ -422,8 +427,8 @@ strong {
     border-top: 16px solid var(--main-color);
     border-bottom: 16px solid var(--second-color);
 
-    -webkit-animation: spin 2s linear;
-    animation: spin 2s linear;
+    -webkit-animation: spin 1.5s linear;
+    animation: spin 1.5s linear;
     visibility: hidden;
 }
 @-webkit-keyframes spin {
@@ -434,6 +439,57 @@ strong {
     0% { transform: rotate(0deg); visibility: visible;}
     100% { transform: rotate(360deg); visibility: hidden;}  
   }
+
+/******************************/
+
+/*Animation MENU*/
+
+.animate-left {
+    position: relative;
+    animation-name: goleft;
+    -webkit-animation-name: goleft;
+    animation-delay: 0.3s;
+}
+.animate-time-entre {
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+.animate-time-plat {
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+}
+.animate-time-dessert {
+    animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+}
+
+@keyframes goleft {
+    0% { left: -100px; opacity: 0;}
+    60% { left: -50px;opacity: 0;}
+    100% { left: 0px; opacity: 1;}
+}
+@-webkit-keyframes goleft {
+    0% { left: -100px; opacity: 0;}
+    60% { left: -50px;opacity: 0;}
+    100% { left: 0px; opacity: 1;}
+}
+
+/**********************************/
+
+/*MEDIA QUERIE*/
+
+@media screen and (min-width: 1000px) {
+    .tabrow {
+        flex-direction: row;
+    }
+    .tabcenter {
+        justify-content: center;
+    }
+    .tabblock {
+        margin: 1% 3%;
+        padding: 28px 2.8%;
+    }
+}
 
 @media screen and (min-width: 800px) {
     .desktopsize {
@@ -465,9 +521,6 @@ strong {
     .desktopblockcenter {
         justify-content: center;
     }
-    .block {
-        margin: 12px 36px;
-    }
     .espacetitre {
         margin-left: 16%;
     }
@@ -493,7 +546,7 @@ strong {
         align-items: center;
     }
     .espacelist {
-        padding: 0% 14%;
+        padding: 0% 17%;
     }
     .bordermenu {
         margin: 0% 17.5%;
@@ -505,5 +558,13 @@ strong {
         left: 700px;
         top: 44px;
     }
-    
+    .menudefilant {
+        overflow: auto;
+        white-space: nowrap;
+        padding-bottom: 20px;
+        padding-left: 14%;
+    }
+    .Cardspace {
+        margin: 0% 2%;
+    }
 }
