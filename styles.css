@@ -1,3 +1,570 @@
-h1 {
-    color: red;
+/*GENERAL*/
+html {
+    overflow-x: hidden;
+}
+:root {
+    --main-color: #9356dc; /* var(--main-color) */
+    --second-color: #ff79da; /* var(--second-color) */
+    --tertiaire-color: #99e2d0; /* var(--tertiaire-color) */
+    --drak-grey-color: #353535; /* var(--drak-grey-color) */
+    --light-grey-color: #f6f6f6; /* var(--light-grey-color) */
+  }
+
+body {
+    font-family: "Roboto";
+    font-weight: 300;
+    color: black;
+
+    margin: auto;
+    overflow-x: hidden;
+    max-width: 1440px;
+    animation: loadersize 1.5s linear;
+}
+@keyframes loadersize {
+    0% {max-width: none;}
+    100% {max-width: none;}
+}
+
+/*HEADER*/
+
+.logoheader {
+    width: 162px;
+    padding: 20px 20px 5px 0px;
+}
+
+.logoblock {
+    width: 100%;
+    height: 63px;
+}
+
+.barreblock {
+    width: 100%;
+    background: #eaeaea;
+    padding: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15) inset;
+}
+
+.fontdot {
+    color: var(--drak-grey-color);
+    padding: 0px 12px;
+    margin-left: 54px;
+}
+
+.barresrc {
+    background: #eaeaea;
+    color: var(--drak-grey-color);
+    text-decoration: none;
+    border: none;
+
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Roboto";
+}
+
+.arrowsize {
+    font-size: 20px;
+}
+
+/*SECTON TEXT*/
+
+.text {
+    width: 75%;
+    text-align: center;
+    padding: 5%;
+}
+
+.colorLG {
+    background: var(--light-grey-color);
+    padding-bottom: 57px;
+}
+
+.list {
+    list-style: none;
+    font-weight: 500;
+}
+
+.block {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    padding: 28px 38px;
+    border-radius: 20px;
+    max-width: 65%;
+    margin: 20px 0px;
+}
+
+.lightgrey {
+    background: var(--light-grey-color);
+}
+
+.pink {
+    background: #f5edff;
+}
+
+.circle {
+    color: white;
+    background: var(--main-color);
+    font-weight: 500;
+    font-size: 14px;
+    padding: 4px 8px;
+    position: absolute;
+    left: -10px;
+    top: 25px;
+}
+
+.fontblock {
+    padding-right: 27px;
+    width: 13px;
+}
+
+.Greycolor {
+    color: #7e7e7e;
+}
+
+.Maincolor {
+    color: var(--main-color);
+}
+
+.espacebottom {
+    margin-bottom: 68px;
+}
+.espacetitre {
+    margin-left: 6%;
+    padding-top: 50px;
+}
+
+.restaurant {
+    padding-top: 1px;
+}
+
+/*Footer*/
+
+.footercolor {
+    background-color: var(--drak-grey-color);
+    font-weight: bolder;
+    font-size: 16px;
+    padding-bottom: 33px;
+}
+
+/*Button*/
+
+.btn {
+    text-decoration: none;
+    color: white;
+    padding: 3.5px 0px;
+}
+
+.btnrounded {
+    border-radius: 25px;
+}
+
+.btncolor {
+    position: relative;
+    border: 0px solid;
+    width: 218px;
+    padding: 15px 18.75px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 16px;
+
+    background: linear-gradient(345deg, var(--main-color), var(--second-color));
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btncolor::after {
+    border: 0px solid;
+    border-radius: 25px;
+    width: 218px;
+    height: 19.5px;
+    padding: 15px 18.75px;
+
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+
+    content: "";
+    position: absolute;
+    top: 0px;
+    background: white;
+    opacity: 0;
+    z-index: 1;
+    transition: ease-in-out 250ms;
+}
+.btncolor:hover::after {
+    opacity: 0.1;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0);
+}
+
+.new {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px;
+    background: var(--tertiaire-color);
+    color: #008766;
+    width: 80px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.restoitem {
+    position: relative;
+}
+.Cardspace {
+    margin: 18px 0px;
+}
+
+.logocolor {
+    font-family: "Shrikhand";
+    color: white;
+    padding: 22px 0px 12.5px;
+}
+
+.label {
+    text-decoration: none;
+    color: black;
+}
+
+.ContentRestoCard {
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    padding: 16px 24px 7px 12px;
+}
+
+.menu {
+    border-radius: 40px 40px 0px 0px;
+}
+
+.colorcheck {
+    color: white;
+    background-color: var(--tertiaire-color);
+    font-size: 20px;
+}
+
+.btncheck {
+    border: none;
+    background-color: var(--tertiaire-color);
+    border-radius: 0px 20px 20px 0px;
+    padding: 27px 0px;
+    position: relative;
+    left: 12px;
+    transition: ease-in-out 500ms;
+    opacity: 0;
+    width: 0px;
+    height: 100%;
+}
+.end:hover .btncheck {
+    opacity: 1;
+    width: 6em;
+    padding: 27px;
+}
+
+li:hover button {
+    display: block;
+    transform: scale(1);
+
+}
+
+.titreresto {
+    font-family: "Shrikhand";
+    padding: 17px;
+}
+
+.bordermenu {
+    border-bottom: 3px solid var(--tertiaire-color);
+    padding: 5px 0%;
+    margin: 0px 4%;
+    width: 40px;
+}
+
+strong {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.textmenu {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.espaceprix {
+    padding-bottom: 15px;
+}
+
+.espacelist {
+    padding: 0% 4%;
+}
+
+/**/
+
+/*DISPLAY*/
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.center {
+    align-items: center;
+}
+
+.end {
+    align-items: end;
+    padding: 0% 12px;
+    width: 90%;
+    max-width: 634px;
+}
+
+/*********************/
+
+.fontlogosize {
+    width: 11px;
+    height: 13px;
+    font-size: 11px;
+}
+
+.imgsize {
+    object-fit: cover;
+    width: 335px;
+    height: 100%;
+    border-radius: 15px 15px 0px 0px;
+    cursor: pointer;
+}
+
+.Cardsize {
+    height: 176px;
+}
+
+.imgbacksize {
+    width: 100%;
+    object-fit: cover;
+}
+.divbacksize {
+    height: 218px;
+}
+
+.backgroundmenu {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.marginleft {
+    margin-left: 5%;
+}
+
+.spacetext {
+    margin: auto;
+    padding: 2.5px;
+}
+
+.fontspace {
+    padding-right: 11px;
+}
+
+/*Anim HEART*/
+
+.FHpositionmenu {
+    position: absolute;
+    left: 312px;
+}
+.FHposition {
+    position: absolute;
+    left: 289px;
+}
+.fontheart {
+    font-size: 20px;
+}
+.full {
+    transition: all 450ms;
+    opacity: 0;
+    background: linear-gradient( var(--main-color), var(--second-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.full:hover {
+    opacity: 1;
+}
+
+/*******************/
+
+/*LOADER*/
+
+.loader-wrapper {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: #353535;
+    animation: loader-wrapper 1.5s linear;
+    visibility: hidden;
+}
+@keyframes loader-wrapper{
+    0% {visibility: visible;}
+    100% {visibility: hidden;}
+}
+
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid var(--main-color);
+    border-bottom: 16px solid var(--second-color);
+
+    -webkit-animation: spin 1.5s linear;
+    animation: spin 1.5s linear;
+    visibility: hidden;
+}
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); visibility: visible;}
+    100% { -webkit-transform: rotate(360deg); visibility: hidden;}
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); visibility: visible;}
+    100% { transform: rotate(360deg); visibility: hidden;}  
+  }
+
+/******************************/
+
+/*Animation MENU*/
+
+.animate-left {
+    position: relative;
+    animation-name: goleft;
+    -webkit-animation-name: goleft;
+    animation-delay: 0.3s;
+}
+.animate-time-entre {
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+.animate-time-plat {
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+}
+.animate-time-dessert {
+    animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+}
+
+@keyframes goleft {
+    0% { left: -100px; opacity: 0;}
+    60% { left: -50px;opacity: 0;}
+    100% { left: 0px; opacity: 1;}
+}
+@-webkit-keyframes goleft {
+    0% { left: -100px; opacity: 0;}
+    60% { left: -50px;opacity: 0;}
+    100% { left: 0px; opacity: 1;}
+}
+
+/**********************************/
+
+/*MEDIA QUERIE*/
+
+@media screen and (min-width: 1000px) {
+    .tabrow {
+        flex-direction: row;
+    }
+    .tabcenter {
+        justify-content: center;
+    }
+    .tabblock {
+        margin: 1% 3%;
+        padding: 28px 2.8%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .desktopsize {
+        font-size: 40px;
+    }
+    .desktoprow {
+        flex-direction: row;
+    }
+    .desktopreverse {
+        flex-direction: row-reverse;
+        justify-content: end;
+        align-items: baseline;
+        margin-right: 5%;
+        padding-top: 26px;
+    }
+    .footermarg {
+        margin-right: 3%;
+    }
+    .footersize {
+        width: 100%;
+        max-width: 650px;
+    }
+    .footercolor {
+        padding-bottom: 26px;
+    }
+    .desktopcenter {
+        align-items: center;
+    }
+    .desktopblockcenter {
+        justify-content: center;
+    }
+    .espacetitre {
+        margin-left: 16%;
+    }
+    .text {
+        padding: 0%;
+    }
+    .colorLG {
+        padding-bottom: 42px;
+    }
+    .btn {
+        margin-top: 1%;
+    }
+    .imgbacksize {
+        width: 1440px;
+        height: 433px;
+    }
+    .backgroundmenu {
+        max-width: 1055px;
+    }
+    .columncenter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .espacelist {
+        padding: 0% 17%;
+    }
+    .bordermenu {
+        margin: 0% 17.5%;
+    }
+    .divbacksize {
+        height: 376px;
+    }
+    .FHpositionmenu {
+        left: 700px;
+        top: 44px;
+    }
+    .menudefilant {
+        overflow: auto;
+        white-space: nowrap;
+        padding-bottom: 20px;
+        padding-left: 14%;
+    }
+    .Cardspace {
+        margin: 0% 2%;
+    }
 }
