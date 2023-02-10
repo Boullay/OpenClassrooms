@@ -18,7 +18,7 @@ body {
     margin: auto;
     overflow-x: hidden;
     max-width: 1440px;
-    animation: loadersize 2s linear;
+    animation: loadersize 1.5s linear;
 }
 @keyframes loadersize {
     0% {max-width: none;}
@@ -299,6 +299,8 @@ strong {
 
 /**/
 
+/*DISPLAY*/
+
 .column {
     display: flex;
     flex-direction: column;
@@ -321,6 +323,8 @@ strong {
     width: 90%;
     max-width: 634px;
 }
+
+/*********************/
 
 .fontlogosize {
     width: 11px;
@@ -444,18 +448,19 @@ strong {
     position: relative;
     animation-name: goleft;
     -webkit-animation-name: goleft;
+    animation-delay: 0.3s;
 }
 .animate-time-entre {
-    animation-duration: 2.5s;
-    -webkit-animation-duration: 2.5s;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
 }
 .animate-time-plat {
-    animation-duration: 3.5s;
-    -webkit-animation-duration: 3.5s;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
 }
 .animate-time-dessert {
-    animation-duration: 4.5s;
-    -webkit-animation-duration: 4.5s;
+    animation-duration: 4s;
+    -webkit-animation-duration: 4s;
 }
 
 @keyframes goleft {
@@ -468,6 +473,8 @@ strong {
     60% { left: -50px;opacity: 0;}
     100% { left: 0px; opacity: 1;}
 }
+
+/**********************************/
 
 /*MEDIA QUERIE*/
 
@@ -555,6 +562,7 @@ strong {
         overflow: auto;
         white-space: nowrap;
         padding-bottom: 20px;
+        padding-left: 14%;
     }
     .Cardspace {
         margin: 0% 2%;
